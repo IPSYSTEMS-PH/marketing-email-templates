@@ -1,0 +1,151 @@
+{
+    "id": "13b5b9b9ef55ee0ad654296b264347f0",
+    "email_address": "marketing@ipsystems.ph",
+    "unique_email_id": "fd0caecf0e",
+    "contact_id": "72b8b9857fa44f9de91b50bf8ac616d2",
+    "full_name": "IPSYSTEMS Marketing",
+    "web_id": 1657288,
+    "email_type": "html",
+    "status": "subscribed",
+    "consents_to_one_to_one_messaging": true,
+    "merge_fields": {
+        "FNAME": "IPSYSTEMS",
+        "LNAME": "Marketing",
+        "MMERGE5": "",
+        "MMERGE6": "",
+        "ADDRESS": "",
+        "MMERGE4": ""
+    },
+    "interests": {
+        "1795099819": false,
+        "d1e3b5c61f": false,
+        "3d6b3e7845": false,
+        "c6a82d5e8f": false,
+        "3d79e47c6e": false,
+        "4f765dfa3b": false,
+        "18bcd69931": false,
+        "5b9205c340": false,
+        "8f8d473899": false,
+        "76af01c3fc": false,
+        "6796385ec0": false,
+        "11c59c4230": false,
+        "5edd874a09": false,
+        "a40a5665d3": false,
+        "3cee8a8e3d": false,
+        "81fa424336": false,
+        "d8a9f54797": false,
+        "bbf1791756": false,
+        "0205d9d23f": false,
+        "4f067bb164": false,
+        "78c1233519": false,
+        "f504a9794a": false,
+        "4ad301ef1f": false,
+        "374b293ae2": false,
+        "17e1858cdc": false,
+        "ca0300b313": false,
+        "4c4e0c4aa2": false,
+        "392e9cf96f": false,
+        "fe5a48e5a6": false,
+        "f864e42ec6": false,
+        "4dcb84c5fb": false,
+        "21a85ee25a": false,
+        "182a9fe331": false,
+        "c7fef30d60": false,
+        "eb6a315fdd": false,
+        "938c463e0a": false,
+        "bfb9855ce8": false,
+        "8d3547fb03": false,
+        "2ace41048e": false,
+        "5871f661ff": false,
+        "1dee811519": false
+    },
+    "stats": {
+        "avg_open_rate": 0.75,
+        "avg_click_rate": 0.25
+    },
+    "ip_signup": "",
+    "timestamp_signup": "",
+    "ip_opt": "122.2.113.123",
+    "timestamp_opt": "2023-01-26T08:29:38+00:00",
+    "member_rating": 2,
+    "last_changed": "2023-02-15T01:43:43+00:00",
+    "language": "",
+    "vip": false,
+    "email_client": "",
+    "location": {
+        "latitude": 39.03,
+        "longitude": -77.49,
+        "gmtoff": -5,
+        "dstoff": -4,
+        "country_code": "US",
+        "timezone": "America/New_York",
+        "region": "VA"
+    },
+    "source": "Admin Add",
+    "tags_count": 0,
+    "tags": [],
+    "list_id": "f29bc0efdb",
+    "_links": [
+        {
+            "rel": "self",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0",
+            "method": "GET",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members",
+            "method": "GET",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/CollectionResponse.json",
+            "schema": "https://us21.api.mailchimp.com/schema/3.0/Paths/Lists/Members/Collection.json"
+        },
+        {
+            "rel": "update",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0",
+            "method": "PATCH",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",
+            "schema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PATCH.json"
+        },
+        {
+            "rel": "upsert",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0",
+            "method": "PUT",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Response.json",
+            "schema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/PUT.json"
+        },
+        {
+            "rel": "delete",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0",
+            "method": "DELETE"
+        },
+        {
+            "rel": "activity",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0/activity",
+            "method": "GET",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Activity/Response.json"
+        },
+        {
+            "rel": "goals",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0/goals",
+            "method": "GET",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Goals/Response.json"
+        },
+        {
+            "rel": "notes",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0/notes",
+            "method": "GET",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Notes/CollectionResponse.json"
+        },
+        {
+            "rel": "events",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0/events",
+            "method": "POST",
+            "targetSchema": "https://us21.api.mailchimp.com/schema/3.0/Definitions/Lists/Members/Events/POST.json"
+        },
+        {
+            "rel": "delete_permanent",
+            "href": "https://us21.api.mailchimp.com/3.0/lists/f29bc0efdb/members/13b5b9b9ef55ee0ad654296b264347f0/actions/delete-permanent",
+            "method": "POST"
+        }
+    ]
+}
