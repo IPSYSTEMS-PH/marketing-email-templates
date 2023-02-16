@@ -26,787 +26,529 @@
 
 
 
-    <style type="text/css">
-        p {
-            margin: 1em 0;
-            padding: 0;
-            font-family: Source Sans Pro, Verdana, sans-serif;
-            line-height: 1.5;
-            font-weight: normal;
-        }
-        
-        table {
-            border-collapse: collapse;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            display: block;
-            margin: 0;
-            padding: 0;
-            font-family: Poppins, Century Gothic, sans-serif;
-            line-height: 1.3;
-            min-height: 100%;
-            font-weight: 600;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-        }
-        
-        img,
-        a img {
-            border: 0;
-            height: auto;
-            outline: none;
-            text-decoration: none;
-        }
-        
-        body,
-        #bodyTable,
-        #bodyCell {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-        
-        #outlook a {
-            padding: 0;
-        }
-        
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        
-        table {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        
-        .ReadMsgBody {
-            width: 100%;
-        }
-        
-        .ExternalClass {
-            width: 100%;
-        }
-        
-        p,
-        a,
-        li,
-        td,
-        blockquote {
-            mso-line-height-rule: exactly;
-        }
-        
-        a[href^=tel],
-        a[href^=sms] {
-            color: inherit;
-            cursor: default;
-            text-decoration: none;
-        }
-        
-        p,
-        a,
-        li,
-        td,
-        body,
-        table,
-        blockquote {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-        
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass td,
-        .ExternalClass div,
-        .ExternalClass span,
-        .ExternalClass font {
-            line-height: 100%;
-        }
-        
-        a[x-apple-data-detectors] {
-            color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        }
-        
-        #bodyCell {
-            padding: 9px;
-        }
-        
-        .templateImage {
-            height: auto;
-            max-width: 564px;
-        }
-        
-        .templateContainer {
-            max-width: 600px !important;
-        }
-        
-        #templatePreheader {
-            padding-right: 9px;
-            padding-left: 9px;
-            background-color: #fafafa;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        #templatePreheader .columnContainer td {
-            padding: 0 9px;
-        }
-        
-        #footerContent {
-            padding-top: 27px;
-            padding-bottom: 18px;
-        }
-        
-        #templateHeader,
-        #templateBody,
-        #templateFooter {
-            padding-right: 18px;
-            padding-left: 18px;
-        }
-        /*
+
+    
+<style type="text/css">
+		p{
+			margin:1em 0;
+			padding:0;
+			font-family:Source Sans Pro, Verdana, sans-serif;
+			line-height:1.5;
+			font-weight:normal;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+			font-family:Poppins, Century Gothic, sans-serif;
+			line-height:1.3;
+			min-height:100%;
+			font-weight:600;
+		}
+		h1{
+			font-size:40px;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=tel],a[href^=sms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		#bodyCell{
+			padding:9px;
+		}
+		.templateImage{
+			height:auto;
+			max-width:564px;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		#templatePreheader{
+			padding-right:9px;
+			padding-left:9px;
+			background-color:#fafafa;
+			background-position:center;
+			background-size:cover;
+		}
+		#templatePreheader .columnContainer td{
+			padding:0 9px;
+		}
+		#footerContent{
+			padding-top:27px;
+			padding-bottom:18px;
+		}
+		#templateHeader,#templateBody,#templateFooter{
+			padding-right:18px;
+			padding-left:18px;
+		}
+	/*
 	@tab Page
 	@section Background Style
 	*/
-        
-        body,
-        #bodyTable {
-            /*@editable*/
-            background-color: #d5d9e2;
-        }
-        /*
+		body,#bodyTable{
+			/*@editable*/background-color:#d5d9e2;
+		}
+	/*
 	@tab Page
 	@section Email Border
 	*/
-        
-        .templateContainer {
-            /*@editable*/
-            border: 0;
-        }
-        /*
+		.templateContainer{
+			/*@editable*/border:0;
+		}
+	/*
 	@tab Page
 	@section Heading 1
 	*/
-        
-        h1 {
-            /*@editable*/
-            color: #222222;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 40px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: bold;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            letter-spacing: normal;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		h1{
+			/*@editable*/color:#222222;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:40px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:150%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Page
 	@section Heading 2
 	*/
-        
-        h2 {
-            /*@editable*/
-            color: #222222;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 28px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: bold;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            letter-spacing: normal;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		h2{
+			/*@editable*/color:#222222;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:28px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:150%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Page
 	@section Heading 3
 	*/
-        
-        h3 {
-            /*@editable*/
-            color: #444444;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 22px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: bold;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            letter-spacing: normal;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		h3{
+			/*@editable*/color:#444444;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:150%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Page
 	@section Heading 4
 	*/
-        
-        h4 {
-            /*@editable*/
-            color: #999999;
-            /*@editable*/
-            font-family: Georgia;
-            /*@editable*/
-            font-size: 20px;
-            /*@editable*/
-            font-style: italic;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            letter-spacing: normal;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		h4{
+			/*@editable*/color:#999999;
+			/*@editable*/font-family:Georgia;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-style:italic;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:150%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Preheader
 	@section Preheader Style
 	*/
-        
-        #templatePreheader {
-            /*@editable*/
-            background-color: #fafafa;
-            /*@editable*/
-            background-image: none;
-            /*@editable*/
-            background-repeat: no-repeat;
-            /*@editable*/
-            background-position: center;
-            /*@editable*/
-            background-size: cover;
-            /*@editable*/
-            border-top: 0;
-            /*@editable*/
-            border-bottom: 0;
-            /*@editable*/
-            padding-top: 9px;
-            /*@editable*/
-            padding-bottom: 9px;
-        }
-        /*
+		#templatePreheader{
+			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
 	@tab Preheader
 	@section Preheader Text
 	*/
-        
-        #templatePreheader,
-        #templatePreheader p {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            /*@editable*/
-            font-size: 12px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		#templatePreheader,#templatePreheader p{
+			/*@editable*/color:#656565;
+			/*@editable*/font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Preheader
 	@section Preheader Link
 	*/
-        
-        #templatePreheader a,
-        #templatePreheader p a {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /*
+		#templatePreheader a,#templatePreheader p a{
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
 	@tab Header
 	@section Header Style
 	*/
-        
-        #templateHeader {
-            /*@editable*/
-            background-color: #FFFFFF;
-            /*@editable*/
-            background-image: none;
-            /*@editable*/
-            background-repeat: no-repeat;
-            /*@editable*/
-            background-position: center;
-            /*@editable*/
-            background-size: cover;
-            /*@editable*/
-            border-top: 0;
-            /*@editable*/
-            border-bottom: 0;
-            /*@editable*/
-            padding-top: 18px;
-            /*@editable*/
-            padding-bottom: 0;
-        }
-        /*
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:18px;
+			/*@editable*/padding-bottom:0;
+		}
+	/*
 	@tab Header
 	@section Header Text
 	*/
-        
-        #templateHeader,
-        #templateHeader p {
-            /*@editable*/
-            color: #606060;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 16px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		#templateHeader,#templateHeader p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Header
 	@section Header Link
 	*/
-        
-        #templateHeader a,
-        #templateHeader p a {
-            /*@editable*/
-            color: #237A91;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /*
+		#templateHeader a,#templateHeader p a{
+			/*@editable*/color:#237A91;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
 	@tab Body
 	@section Body Style
 	*/
-        
-        #templateBody {
-            /*@editable*/
-            background-color: #FFFFFF;
-            /*@editable*/
-            background-image: none;
-            /*@editable*/
-            background-repeat: no-repeat;
-            /*@editable*/
-            background-position: center;
-            /*@editable*/
-            background-size: cover;
-            /*@editable*/
-            border-top: 0;
-            /*@editable*/
-            padding-top: 0;
-            /*@editable*/
-            padding-bottom: 9px;
-        }
-        /*
+		#templateBody{
+			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-image:url("https://mcusercontent.com/1cb7a2759b095fb93f493c1a2/images/67bb5cb8-ad92-2e30-a150-27003b9d3236.jpg");
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/padding-top:0;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
 	@tab Body
 	@section Body Text
 	*/
-        
-        #templateBody,
-        #templateBody p {
-            /*@editable*/
-            color: #606060;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 16px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            text-align: left;
-        }
-        /*
+		#templateBody,#templateBody p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
 	@tab Body
 	@section Body Link
 	*/
-        
-        #templateBody a,
-        #templateBody p a {
-            /*@editable*/
-            color: #237A91;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /*
+		#templateBody a,#templateBody p a{
+			/*@editable*/color:#237A91;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
 	@tab Footer
 	@section Footer Style
 	*/
-        
-        #templateFooter {
-            /*@editable*/
-            background-color: #FFFFFF;
-            /*@editable*/
-            background-image: none;
-            /*@editable*/
-            background-repeat: no-repeat;
-            /*@editable*/
-            background-position: center;
-            /*@editable*/
-            background-size: cover;
-            /*@editable*/
-            border-top: 0;
-            /*@editable*/
-            border-bottom: 0;
-            /*@editable*/
-            padding-bottom: 9px;
-        }
-        /*
+		#templateFooter{
+			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
 	@tab Footer
 	@section Social Bar Style
 	*/
-        
-        #socialBar {
-            /*@editable*/
-            background-color: #333333;
-            /*@editable*/
-            border: 0;
-            /*@editable*/
-            padding: 18px;
-        }
-        /*
+		#socialBar{
+			/*@editable*/background-color:#333333;
+			/*@editable*/border:0;
+			/*@editable*/padding:18px;
+		}
+	/*
 	@tab Footer
 	@section Social Bar Text
 	*/
-        
-        #socialBar,
-        #socialBar p {
-            /*@editable*/
-            color: #FFFFFF;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 12px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            text-align: center;
-        }
-        /*
+		#socialBar,#socialBar p{
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:center;
+		}
+	/*
 	@tab Footer
 	@section Social Bar Link
 	*/
-        
-        #socialBar a,
-        #socialBar p a {
-            /*@editable*/
-            color: #FFFFFF;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /*
+		#socialBar a,#socialBar p a{
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
 	@tab Footer
 	@section Footer Text
 	*/
-        
-        #footerContent,
-        #footerContent p {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 12px;
-            /*@editable*/
-            line-height: 1.5;
-            /*@editable*/
-            text-align: center;
-        }
-        /*
+		#footerContent,#footerContent p{
+			/*@editable*/color:#656565;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:1.5;
+			/*@editable*/text-align:center;
+		}
+	/*
 	@tab Footer
 	@section Footer Link
 	*/
-        
-        #footerContent a,
-        #footerContent p a {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /*
+		#footerContent a,#footerContent p a{
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
 	@tab Footer
 	@section Utility Bar Style
 	*/
-        
-        #utilityBar {
-            /*@editable*/
-            background-color: #FAFAFA;
-            /*@editable*/
-            border: 0;
-            /*@editable*/
-            padding-top: 9px;
-            /*@editable*/
-            padding-bottom: 9px;
-        }
-        /*
+		#utilityBar{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/border:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
 	@tab Footer
 	@section Utility Bar Text
 	*/
-        
-        #utilityBar,
-        #utilityBar p {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 12px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            text-align: center;
-        }
-        /*
+		#utilityBar,#utilityBar p{
+			/*@editable*/color:#656565;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:center;
+		}
+	/*
 	@tab Footer
 	@section Utility Bar Link
 	*/
-        
-        #utilityBar a,
-        #utilityBar p a {
-            /*@editable*/
-            color: #656565;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        
-        @media only screen and (max-width: 480px) {
-            body,
-            table,
-            td,
-            p,
-            a,
-            li,
-            blockquote {
-                -webkit-text-size-adjust: none !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            body {
-                width: 100% !important;
-                min-width: 100% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            .templateImage {
-                width: 100% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            .columnContainer {
-                max-width: 100% !important;
-                width: 100% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            .mobileHide {
-                display: none;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            .utilityLink {
-                display: block;
-                padding: 9px 0;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#utilityBar a,#utilityBar p a{
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.templateImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.columnContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mobileHide{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.utilityLink{
+			display:block;
+			padding:9px 0;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Heading 1
 	*/
-            h1 {
-                /*@tab Mobile Styles
-@section Heading 1*/
-                font-size: calc(1.375rem + 1.5vw) !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		h1{
+			/*@tab Mobile Styles
+@section Heading 1*/font-size:calc(1.375rem + 1.5vw) !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Heading 2
 	*/
-            h2 {
-                /*@editable*/
-                font-size: 20px !important;
-                /*@editable*/
-                line-height: 175% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		h2{
+			/*@editable*/font-size:20px !important;
+			/*@editable*/line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Heading 3
 	*/
-            h3 {
-                /*@editable*/
-                font-size: 18px !important;
-                /*@editable*/
-                line-height: 175% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		h3{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Heading 4
 	*/
-            h4 {
-                /*@editable*/
-                font-size: 16px !important;
-                /*@editable*/
-                line-height: 175% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		h4{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:175% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Preheader Visibility
 	*/
-            #templatePreheader {
-                /*@editable*/
-                display: block !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#templatePreheader{
+			/*@editable*/display:block !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Preheader Text
 	*/
-            #templatePreheader,
-            #templatePreheader p {
-                /*@editable*/
-                font-size: 14px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#templatePreheader,#templatePreheader p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Header Text
 	*/
-            #templateHeader,
-            #templateHeader p {
-                /*@editable*/
-                font-size: 16px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#templateHeader,#templateHeader p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Body Text
 	*/
-            #templateBody,
-            #templateBody p {
-                /*@editable*/
-                font-size: 16px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#templateBody,#templateBody p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Footer Text
 	*/
-            #templateFooter,
-            #templateFooter p {
-                /*@editable*/
-                font-size: 14px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#templateFooter,#templateFooter p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Social Bar Text
 	*/
-            #socialBar,
-            #socialBar p {
-                /*@editable*/
-                font-size: 14px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#socialBar,#socialBar p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Utility Bar Text
 	*/
-            #utilityBar,
-            #utilityBar p {
-                /*@editable*/
-                font-size: 14px !important;
-                /*@editable*/
-                line-height: 150% !important;
-            }
-        }
-        
-        @media only screen and (max-width: 480px) {
-            /*
+		#utilityBar,#utilityBar p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
 	@tab Mobile Styles
 	@section Utility Bar Text
 	*/
-            .templateColumns.templateColumnContainer {
-                /*@editable*/
-                width: 100% !important;
-            }
-        }
-    </style>
-</head>
+		.templateColumns.templateColumnContainer{
+			/*@editable*/width:100% !important;
+		}
+
+}</style></head>
 
 <body>
     <center>
@@ -822,13 +564,11 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 
                         <!-- BEGIN HEADER // -->
-                        <!-- BEGIN HEADER // -->
                         <tr>
                             <td valign="top" id="templateHeader" style="border-radius: 24px 24px 0px 0px ; padding: 0px !important; margin: 0px !important;">
 
                                 <!-- BEGIN MODULE: HEADER IMAGE // -->
-                                <img src="https://mcusercontent.com/1cb7a2759b095fb93f493c1a2/images/71435e53-ecb7-2acf-6293-ecc1c08434c2.jpg" style="max-width:600px; border-radius: 24px 24px 0px 0px ;" class="templateImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner=""
-                                    mc:allowtext="">
+                                <img src="https://mcusercontent.com/1cb7a2759b095fb93f493c1a2/images/71435e53-ecb7-2acf-6293-ecc1c08434c2.jpg" style="max-width:600px; border-radius: 24px 24px 0px 0px ;" class="templateImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
                                 <!-- // END MODULE: HEADER IMAGE -->
 
                             </td>
@@ -839,27 +579,27 @@
                             <td valign="top" id="templateBody" style="padding-top: 24px;" mc:edit="body">
                                 <!-- BEGIN MODULE: BODY CONTENT // -->
                                 <h1 style="  font-family: Poppins, Century Gothic, sans-serif;
-            line-height: 1.3; font-size: 64px; color: #111"><span style="color: #fd9a24">WELCOME TO</span> IPSYSTEMS, Inc.
-                                    <h1>
-                                        <p style="text-align: justify;"><br>
+	line-height: 1.3; font-size: 64px; color: #111"><span style="color: #fd9a24">WELCOME TO</span> IPSYSTEMS, Inc.
+                                    </h1><h1>
+                                        </h1><p style="text-align: justify;"><br>
                                             <span style="color:#000000"><strong>Hi [Name],</strong><br>
-                                                <br>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                                                laoreet fringilla nibh, ac lacinia odio porttitor ut. Mauris efficitur
-                                                urna nec dapibus sollicitudin. Orci varius natoque penatibus et magnis
-                                                dis parturient montes, nascetur ridiculus mus. Fusce vestibulum ligula
-                                                et quam placerat bibendum.</span>
+										<br>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+										laoreet fringilla nibh, ac lacinia odio porttitor ut. Mauris efficitur
+										urna nec dapibus sollicitudin. Orci varius natoque penatibus et magnis
+										dis parturient montes, nascetur ridiculus mus. Fusce vestibulum ligula
+										et quam placerat bibendum.</span>
                                         </p>
-                                        </div>
+                                        
 
                                         <div>
                                             <p style="text-align: center;"><span style="color:#000000"><strong>WANT TO
-                                                        KNOW
-                                                        MORE ABOUT US?</strong></span></p>
+												KNOW
+												MORE ABOUT US?</strong></span></p>
                                         </div>
 
                                         <div style="display: flex;
-                                justify-content: center;">
+						justify-content: center;">
                                             <table border="0" cellpadding="0" cellspacing="0" style="background-color:#fd9a24; border-radius:16px;">
                                                 <tbody>
                                                     <tr>
@@ -870,32 +610,26 @@
                                         </div>
 
                                         <div>
-                                            <p style="text-align: justify;"><span style="color:#000000">Lorem ipsum
-                                                    dolor
-                                                    sit amet, consectetur adipiscing elit. Praesent laoreet fringilla
-                                                    nibh,
-                                                    ac lacinia odio porttitor ut. Mauris efficitur urna nec dapibus
-                                                    sollicitudin.</span><br>
+                                            <p style="text-align: center;"><span style="font-size:14px; line-height: 1.3; color:#000000">Lorem ipsum
+											dolor
+											sit amet, consectetur adipiscing elit. Praesent laoreet fringilla
+											nibh,
+											ac lacinia odio porttitor ut. Mauris efficitur urna nec dapibus
+											sollicitudin.</span><br>
                                                 <br>
                                             </p>
-                                        </div>
-
-                                        <tr>
-                                            <td valign="top" style="padding: 0px !important; margin: 0px !important;">
-
-                                                <!-- BEGIN MODULE: HEADER IMAGE // -->
-                                                <img src="https://mcusercontent.com/1cb7a2759b095fb93f493c1a2/images/fda72bb8-0a95-239d-f436-14f02af2f428.jpg" style="max-width:100%" class="templateImage" mc:allowdesigner="" mc:allowtext="">
+                                             <!-- BEGIN MODULE: HEADER IMAGE // -->
+                                                <img src="https://mcusercontent.com/1cb7a2759b095fb93f493c1a2/images/fda72bb8-0a95-239d-f436-14f02af2f428.jpg" style="border-radius: 16px" class="templateImage" mc:allowdesigner="" mc:allowtext="">
                                                 <!-- // END MODULE: HEADER IMAGE -->
-
-                                            </td>
-                                        </tr>
-                                        <!-- // END MODULE: BODY CONTENT -->
                                         </div>
+
+                                   
+                                        <!-- // END MODULE: BODY CONTENT -->
+                                        
                             </td>
 
                         </tr>
                         <!-- // END BODY -->
-                        <!-- BEGIN FOOTER // -->
                         <!-- // END BODY -->
                         <!-- BEGIN FOOTER // -->
                         <tr>
@@ -926,162 +660,6 @@
                                                                             <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
-                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
-                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-
-                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                                                            <a href="https://www.facebook.com/ipsystemsinc/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png" alt="Facebook" style="display:block;" height="24"
-                                                                                                                                    width="24" class=""></a>
-                                                                                                                        </td>
-
-
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                            <!--[if mso]>
-                                                                        </td>
-                                                                        <![endif]-->
-
-                                                                            <!--[if mso]>
-                                                                        <td align="center" valign="top">
-                                                                        <![endif]-->
-
-
-                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
-                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
-                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-
-                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                                                            <a href="https://twitter.com/ipsystemsph" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png" alt="Twitter" style="display:block;" height="24"
-                                                                                                                                    width="24" class=""></a>
-                                                                                                                        </td>
-
-
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                            <!--[if mso]>
-                                                                        </td>
-                                                                        <![endif]-->
-
-                                                                            <!--[if mso]>
-                                                                        <td align="center" valign="top">
-                                                                        <![endif]-->
-
-
-                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
-                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
-                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-
-                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                                                            <a href="https://www.linkedin.com/company/ipsystemsinc/mycompany/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-linkedin-48.png" alt="LinkedIn" style="display:block;" height="24"
-                                                                                                                                    width="24" class=""></a>
-                                                                                                                        </td>
-
-
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                            <!--[if mso]>
-                                                                        </td>
-                                                                        <![endif]-->
-
-                                                                            <!--[if mso]>
-                                                                        <td align="center" valign="top">
-                                                                        <![endif]-->
-
-
-                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
-                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
-                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-
-                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                                                            <a href="https://www.youtube.com/channel/UC9ByJzsCpeNKkfte5FfdqFg/videos" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png" alt="YouTube" style="display:block;" height="24"
-                                                                                                                                    width="24" class=""></a>
-                                                                                                                        </td>
-
-
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                            <!--[if mso]>
-                                                                        </td>
-                                                                        <![endif]-->
-
-                                                                            <!--[if mso]>
-                                                                        <td align="center" valign="top">
-                                                                        <![endif]-->
-
-
-                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
-                                                                                <tbody>
-                                                                                    <tr>
                                                                                         <td valign="top" style="padding-right:0; padding-bottom:9px;" class="mcnFollowContentItemContainer">
                                                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
                                                                                                 <tbody>
@@ -1092,8 +670,46 @@
                                                                                                                     <tr>
 
                                                                                                                         <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                                                            <a href="https://ipsystems.ph/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png" alt="Website" style="display:block;" height="24"
-                                                                                                                                    width="24" class=""></a>
+                                                                                                                            <a href="https://ipsystems.ph/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png" alt="Website" style="display:block;" height="24" width="24" class=""></a>
+                                                                                                                        </td>
+
+
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <!--[if mso]>
+                                                                    </td>
+                                                                    <![endif]-->
+
+
+                                                                            <!--[if mso]>
+                                                                        <td align="center" valign="top">
+                                                                        <![endif]-->
+
+
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
+                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+
+                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                                                            <a href="https://www.facebook.com/ipsystemsinc/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png" alt="Facebook" style="display:block;" height="24" width="24" class=""></a>
                                                                                                                         </td>
 
 
@@ -1112,6 +728,121 @@
                                                                             <!--[if mso]>
                                                                         </td>
                                                                         <![endif]-->
+
+                                                                            <!--[if mso]>
+                                                                        <td align="center" valign="top">
+                                                                        <![endif]-->
+
+
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
+                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+
+                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                                                            <a href="https://twitter.com/ipsystemsph" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-twitter-48.png" alt="Twitter" style="display:block;" height="24" width="24" class=""></a>
+                                                                                                                        </td>
+
+
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <!--[if mso]>
+                                                                        </td>
+                                                                        <![endif]-->
+
+                                                                            <!--[if mso]>
+                                                                        <td align="center" valign="top">
+                                                                        <![endif]-->
+
+
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
+                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+
+                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                                                            <a href="https://www.linkedin.com/company/ipsystemsinc/mycompany/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-linkedin-48.png" alt="LinkedIn" style="display:block;" height="24" width="24" class=""></a>
+                                                                                                                        </td>
+
+
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <!--[if mso]>
+                                                                        </td>
+                                                                        <![endif]-->
+
+                                                                            <!--[if mso]>
+                                                                        <td align="center" valign="top">
+                                                                        <![endif]-->
+
+
+                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" style="padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td align="left" valign="middle" style="padding-top:5px; padding-bottom:5px; padding-left:9px;">
+                                                                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+
+                                                                                                                        <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                                                            <a href="https://www.youtube.com/channel/UC9ByJzsCpeNKkfte5FfdqFg/videos" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/gray-youtube-48.png" alt="YouTube" style="display:block;" height="24" width="24" class=""></a>
+                                                                                                                        </td>
+
+
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <!--[if mso]>
+                                                                        </td>
+                                                                        <![endif]-->
+
 
                                                                             <!--[if mso]>
                                                                     </tr>
@@ -1129,8 +860,8 @@
                                                 <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td valign="top" class="rightColumnContent">
-                                                            <div mc:edit="footer" style="text-align: right;  font-family: Poppins, Century Gothic, sans-serif;">
-                                                                IPSYSTEMS, Inc.
+                                                            <div mc:edit="footer" style="text-align: right;  font-family: Poppins, Century Gothic, sans-serif;"><span style="color:#FD9A24"><strong>IPSYSTEMS, Inc.</strong></span><br>
+                                                                <p style="font-size:10px; line-height: 1.3">1004 Antel Global Corporate Center #3 Julia Vargas Ave., Ortigas Center Pasig City, Philippines 1605</p>
                                                             </div>
 
                                                         </td>
