@@ -1,0 +1,3 @@
+[submodule "email-blueprints"]
+	path = email-blueprints
+	url = https://github.com/rjeth/email-blueprints.git
